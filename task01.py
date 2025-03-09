@@ -16,7 +16,6 @@ def total_salary(path):
     try:
         with open(path, 'r', encoding='utf-8') as fh:
             clianed_lines = [el.strip() for el in fh.readlines() if el.strip()]
-            # salary_dict = {el.split(',')[0]: int(el.split(',')[1]) for el in clianed_lines}
             total = 0
             count = 0
             for line in clianed_lines:
